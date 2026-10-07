@@ -1,0 +1,219 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fcfaf5;
+    color: #1d2a22;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+#wrapper {
+    background-color: #ffffff;
+}
+
+header {
+    background-color: #1f5d3a;
+    color: #ffffff;
+    text-align: center;
+    padding: 1em;
+}
+
+header a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+h1 {
+    margin: 0;
+    letter-spacing: 0.1em;
+}
+
+header p {
+    margin: 5px 0 0 0;
+    font-size: 1em;
+}
+
+nav {
+    background-color: #a8bfa3;
+    text-align: center;
+    font-weight: bold;
+    padding: 0;
+    border-bottom: 4px solid #c89b3c;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding-left: 0;
+}
+
+nav li {
+    border-bottom: 1px solid #1d2a22;
+}
+
+nav a {
+    text-decoration: none;
+    color: #1d2a22;
+    display: block;
+    padding: 0.5em;
+}
+
+nav a:hover {
+    color: #ffffff;
+    background-color: #1f5d3a;
+}
+
+#homehero {
+    height: 300px;
+    background-image: url(golfhero.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+main {
+    padding: 1px 20px 20px 20px;
+    display: block;
+    overflow: auto;
+}
+
+h2 {
+    color: #1f5d3a;
+    text-align: center;
+}
+
+h3 {
+    color: #1f5d3a;
+}
+
+section {
+    padding: 1em;
+}
+
+footer {
+    background-color: #1d2a22;
+    color: #ffffff;
+    font-size: 75%;
+    font-style: italic;
+    text-align: center;
+    padding: 2em;
+}
+
+footer a {
+    color: #ffffff;
+}
+
+@media (min-width: 600px) {
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    nav li {
+        border-bottom: none;
+    }
+
+    .flow {
+        display: flex;
+        flex-direction: row;
+    }
+
+    section {
+        flex: 1;
+        margin-left: 2em;
+        margin-right: 2em;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    #wrapper {
+        width: 80%;
+        margin: auto;
+        max-width: 1200px;
+        box-shadow: 3px 3px 10px #333333;
+    }
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2em;
+}
+
+th {
+    background-color: #1f5d3a;
+    color: #ffffff;
+    padding: 10px;
+    border: 1px solid #1d2a22;
+}
+
+td {
+    padding: 10px;
+    border: 1px solid #1d2a22;
+}
+
+
+video {
+    width: 80%;
+    height: auto;
+    display: block;
+    margin: 1em auto 2em auto;
+}
+
+form {
+    width: 80%;
+    margin-bottom: 2em;
+}
+
+label {
+    display: block;
+    margin-top: 1em;
+}
+
+input, select, textarea {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+}
+
+input[type="submit"] {
+    width: 100px;
+    margin-top: 1em;
+}
+
+#gettingstartedhero {
+    height: 250px;
+    background-image: url(gettingstartedhero.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#equipmentlayout {
+    display: flex;
+}
+
+#equipmenthero {
+    width: 28%;
+    background-image: url(equipmenthero.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#equipmentlayout main {
+    width: 72%;
+}
+
+#firstroundhero {
+    height: 400px;
+    background-image: url(firstroundhero.jpg);
+    background-size: cover;
+    background-position: center 70%;
+    background-repeat: no-repeat;
+}
